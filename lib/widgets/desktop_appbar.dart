@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:vaco_website/screens/contact_sales_screen/contact_sales_screen.dart';
+import 'package:vaco_website/screens/home_screen/home_screen.dart';
+import 'package:vaco_website/screens/platform_screen/platform_screen.dart';
+import 'package:vaco_website/screens/pricing_screen/pricing_screen.dart';
+import 'package:vaco_website/screens/use_cases_screen/use_cases_screen.dart';
 import 'package:vaco_website/theme/colors.dart';
 import 'package:vaco_website/theme/text_styles.dart';
 
-class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget{
+class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
   const DesktopAppbar({super.key});
 
   @override
@@ -13,13 +18,33 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget{
     return AppBar(
       backgroundColor: VacoColors.vacoBlue,
       titleSpacing: 32.0,
-      title: Text("Vaco"),
+      title: TextButton(
+        onPressed: () => Navigator.pushReplacement(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) => HomeScreen(),
+            transitionDuration: Duration.zero,
+            reverseTransitionDuration: Duration.zero,
+          ),
+        ),
+        child: Text(
+          "Vaco",
+          style: VacoTextStyles.appBarTitle,
+        ),
+      ),
       titleTextStyle: VacoTextStyles.appBarTitle,
       centerTitle: false,
       toolbarHeight: 80.0,
       actions: [
         TextButton(
-          onPressed: () {},
+          onPressed: () => Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, animation1, animation2) => PlatformScreen(),
+              transitionDuration: Duration.zero,
+              reverseTransitionDuration: Duration.zero,
+            ),
+          ),
           child: Text(
             "Platform",
             style: VacoTextStyles.appBarAction,
@@ -27,15 +52,29 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget{
         ),
         SizedBox(width: 8.0),
         TextButton(
-          onPressed: () {},
+          onPressed: () => Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, animation1, animation2) => UseCasesScreen(),
+              transitionDuration: Duration.zero,
+              reverseTransitionDuration: Duration.zero,
+            ),
+          ),
           child: Text(
-            "Use cases (Update/Communicate/Celebrate)",
+            "Use cases",
             style: VacoTextStyles.appBarAction,
           ),
         ),
         SizedBox(width: 8.0),
         TextButton(
-          onPressed: () {},
+          onPressed: () => Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, animation1, animation2) => PricingScreen(),
+              transitionDuration: Duration.zero,
+              reverseTransitionDuration: Duration.zero,
+            ),
+          ),
           child: Text(
             "Pricing",
             style: VacoTextStyles.appBarAction,
@@ -50,7 +89,14 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget{
               borderRadius: BorderRadius.circular(8.0),
             ),
           ),
-          onPressed: () {},
+          onPressed: () => Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, animation1, animation2) => ContactSalesScreen(),
+              transitionDuration: Duration.zero,
+              reverseTransitionDuration: Duration.zero,
+            ),
+          ),
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 12.0),
             child: Text(
