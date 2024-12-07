@@ -19,6 +19,7 @@ class MobileAppbar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: VacoColors.vacoBlue,
       titleSpacing: 32.0,
       title: TextButton(
+        style: ButtonStyle(overlayColor: WidgetStateProperty.all(Colors.transparent)),
         onPressed: () => Navigator.pushReplacement(
           context,
           PageRouteBuilder(

@@ -19,6 +19,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: VacoColors.vacoBlue,
       titleSpacing: 32.0,
       title: TextButton(
+        style: ButtonStyle(overlayColor: WidgetStateProperty.all(Colors.transparent)),
         onPressed: () => Navigator.pushReplacement(
           context,
           PageRouteBuilder(
@@ -37,6 +38,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
       toolbarHeight: 80.0,
       actions: [
         TextButton(
+          style: ButtonStyle(overlayColor: WidgetStateProperty.all(Colors.transparent)),
           onPressed: () => Navigator.pushReplacement(
             context,
             PageRouteBuilder(
@@ -52,6 +54,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
         ),
         SizedBox(width: 8.0),
         TextButton(
+          style: ButtonStyle(overlayColor: WidgetStateProperty.all(Colors.transparent)),
           onPressed: () => Navigator.pushReplacement(
             context,
             PageRouteBuilder(
@@ -67,6 +70,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
         ),
         SizedBox(width: 8.0),
         TextButton(
+          style: ButtonStyle(overlayColor: WidgetStateProperty.all(Colors.transparent)),
           onPressed: () => Navigator.pushReplacement(
             context,
             PageRouteBuilder(
