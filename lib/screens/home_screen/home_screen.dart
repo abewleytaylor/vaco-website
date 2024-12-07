@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              MediaQuery.of(context).size.width > MediaQuery.of(context).size.height && MediaQuery.of(context).size.height > 512
+              MediaQuery.of(context).size.width > MediaQuery.of(context).size.height * 1.3 && MediaQuery.of(context).size.height > 512
                   ? Container(
                       transform: Matrix4.translationValues(125, 0, 0),
                       decoration: BoxDecoration(
