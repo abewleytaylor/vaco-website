@@ -18,18 +18,18 @@ class ContactSalesMobileView extends StatelessWidget {
             children: [
               Text(
                 "Ready to see what content can do for you?",
-                style: VacoTextStyles.homeScreenLine1,
+                style: VacoTextStyles.vacoHeaderSmall,
               ),
               SizedBox(height: 48.0),
               Text(
                 "Get in touch with sales to arrange a demo, discuss pricing, or explore your use cases.",
-                style: VacoTextStyles.homeScreenLine3,
+                style: VacoTextStyles.vacoBody,
               ),
               SizedBox(height: 32.0),
               Text(
                 "Email: sales@vaco.app\n"
                 "Phone: coming soon",
-                style: VacoTextStyles.homeScreenLine3,
+                style: VacoTextStyles.vacoBody,
               ),
             ],
           ),

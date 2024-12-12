@@ -45,12 +45,12 @@ class PlatformMobileView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
-              Text("THE LANGUAGE OF TODAY", style: VacoTextStyles.homeScreenLine1),
+              Text("THE LANGUAGE OF TODAY", style: VacoTextStyles.vacoHeaderSmall),
               SizedBox(height: 32.0),
               Text(
                 "Where humans exist in groups there's a need for communication that anyone can listen to, should they choose.\n\n"
                 "As the newspaper replaced the town crier, and digital media replaced the newspaper, Vaco replaces the ill suited means of internal communication that businesses have relied on for years.",
-                style: VacoTextStyles.homeScreenLine3,
+                style: VacoTextStyles.vacoBody,
               ),
             ],
           ),
@@ -96,13 +96,13 @@ class PlatformMobileView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
-              Text("A THOUSAND WORDS", style: VacoTextStyles.homeScreenLine1),
+              Text("A THOUSAND WORDS", style: VacoTextStyles.vacoHeaderSmall),
               SizedBox(height: 32.0),
               Text(
                 "Typical channels like email and instant messaging make text the centerpiece of communications.\n\n"
                 "This carry over from the days of printing presses limits what can be said and stops busy colleagues engaging with the content being shared.\n\n"
                 "Vaco supports multimedia posting to make sure that whatever the best way is to say something, you can say it.",
-                style: VacoTextStyles.homeScreenLine3,
+                style: VacoTextStyles.vacoBody,
               ),
             ],
           ),
@@ -148,12 +148,12 @@ class PlatformMobileView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
-              Text("KEEP THE CONVERSATION GOING", style: VacoTextStyles.homeScreenLine1),
+              Text("KEEP THE CONVERSATION GOING", style: VacoTextStyles.vacoHeaderSmall),
               SizedBox(height: 32.0),
               Text(
                 "Sending an email to everyone in your organisation is a great way to end a conversation.\n\n"
                 "Vaco's unique discussions feature encourages collaboration and healthy conversation.",
-                style: VacoTextStyles.homeScreenLine3,
+                style: VacoTextStyles.vacoBody,
               ),
             ],
           ),

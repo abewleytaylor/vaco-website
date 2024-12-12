@@ -30,14 +30,14 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Text("BUSINESS SOCIAL", style: VacoTextStyles.homeScreenLine1),
+                        Text("BUSINESS SOCIAL", style: VacoTextStyles.vacoHeaderSmall),
                         SizedBox(height: 32.0),
-                        Text("Connect through content", style: VacoTextStyles.homeScreenLine2),
+                        Text("Connect through content", style: VacoTextStyles.vacoHeaderLarge),
                         SizedBox(height: 32.0),
                         Text(
                             "Break down silos, communicate goals and celebrate achievements with a team connectivity platform that puts people first.\n\n"
                             "When content connects, teams never miss a moment to shine.",
-                            style: VacoTextStyles.homeScreenLine3),
+                            style: VacoTextStyles.vacoBody),
                         SizedBox(height: 64.0),
                         Wrap(
                           runSpacing: 16.0,

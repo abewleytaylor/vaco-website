@@ -20,13 +20,13 @@ class ContactSalesDesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Text("Ready to see what content can do for you?", style: VacoTextStyles.homeScreenLine1),
+                    Text("Ready to see what content can do for you?", style: VacoTextStyles.vacoHeaderSmall),
                     SizedBox(height: 32.0),
                     Text(
                       "Get in touch with sales to arrange a demo, discuss pricing, or explore your use cases.\n\n"
                       "Email: sales@vaco.app\n"
                       "Phone: Coming soon",
-                      style: VacoTextStyles.homeScreenLine3,
+                      style: VacoTextStyles.vacoBody,
                     ),
                   ],
                 ),

@@ -15,19 +15,19 @@ class VacoTextStyles {
     color: VacoColors.vacoBlack,
   );
 
-  static TextStyle homeScreenLine1 = GoogleFonts.cantarell(
+  static TextStyle vacoHeaderSmall = GoogleFonts.cantarell(
     fontSize: 16,
     fontWeight: FontWeight.bold,
     color: VacoColors.vacoBlack,
   );
 
-  static TextStyle homeScreenLine2 = GoogleFonts.cantarell(
+  static TextStyle vacoHeaderLarge = GoogleFonts.cantarell(
     fontSize: 64,
     fontWeight: FontWeight.normal,
     color: VacoColors.vacoBlack,
   );
 
-  static TextStyle homeScreenLine3 = GoogleFonts.cantarell(
+  static TextStyle vacoBody = GoogleFonts.cantarell(
     fontSize: 16,
     fontWeight: FontWeight.normal,
     color: VacoColors.vacoBlack,
