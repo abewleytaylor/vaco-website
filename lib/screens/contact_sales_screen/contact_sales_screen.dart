@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vaco_website/screens/contact_sales_screen/contact_sales_desktop_view.dart';
+import 'package:vaco_website/screens/contact_sales_screen/contact_sales_mobile_view.dart';
 import 'package:vaco_website/screens/policy_screens/privacy_policy_screen.dart';
 import 'package:vaco_website/screens/policy_screens/terms_of_service_screen.dart';
 import 'package:vaco_website/theme/colors.dart';
@@ -32,9 +34,7 @@ class ContactSalesScreen extends StatelessWidget {
           child: Text("Terms of Service"),
         ),
       ],
-      body: Center(
-        child: Text("Coming soon: Contact sales"),
-      ),
+      body: MediaQuery.of(context).size.width > MediaQuery.of(context).size.height * 1.3 && MediaQuery.of(context).size.height > 512 ? ContactSalesDesktopView() : ContactSalesMobileView(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaco_website/screens/contact_sales_screen/contact_sales_screen.dart';
 import 'package:vaco_website/screens/policy_screens/privacy_policy_screen.dart';
 import 'package:vaco_website/screens/policy_screens/terms_of_service_screen.dart';
 import 'package:vaco_website/theme/colors.dart';
@@ -50,7 +51,10 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(height: 32.0),
                       Text("Connect through content", style: VacoTextStyles.homeScreenLine2),
                       SizedBox(height: 32.0),
-                      Text("Break down silos, communicate goals and celebrate achievements with a team connectivity platform that puts people first.", style: VacoTextStyles.homeScreenLine3),
+                      Text(
+                          "Break down silos, communicate goals and celebrate achievements with a team connectivity platform that puts people first.\n\n"
+                          "When content connects, teams never miss a moment to shine.",
+                          style: VacoTextStyles.homeScreenLine3),
                       SizedBox(height: 64.0),
                       Wrap(
                         runSpacing: 16.0,
@@ -62,7 +66,14 @@ class HomeScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () => Navigator.pushReplacement(
+                              context,
+                              PageRouteBuilder(
+                                pageBuilder: (context, animation1, animation2) => ContactSalesScreen(),
+                                transitionDuration: Duration.zero,
+                                reverseTransitionDuration: Duration.zero,
+                              ),
+                            ),
                             child: Padding(
                               padding: const EdgeInsets.symmetric(vertical: 16.0),
                               child: Text(
@@ -80,7 +91,14 @@ class HomeScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () => Navigator.pushReplacement(
+                              context,
+                              PageRouteBuilder(
+                                pageBuilder: (context, animation1, animation2) => ContactSalesScreen(),
+                                transitionDuration: Duration.zero,
+                                reverseTransitionDuration: Duration.zero,
+                              ),
+                            ),
                             child: Padding(
                               padding: const EdgeInsets.symmetric(vertical: 16.0),
                               child: Text(
