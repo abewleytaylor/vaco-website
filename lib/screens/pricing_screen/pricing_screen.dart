@@ -22,7 +22,7 @@ class PricingScreen extends StatelessWidget {
             children: [
               Text(
                 "£2.49 / User / Month",
-                style: VacoTextStyles.vacoHeaderLarge,
+                style: VacoTextStyles.vacoTitle,
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 16.0),

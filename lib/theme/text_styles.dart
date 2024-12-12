@@ -15,13 +15,13 @@ class VacoTextStyles {
     color: VacoColors.vacoBlack,
   );
 
-  static TextStyle vacoHeaderSmall = GoogleFonts.cantarell(
+  static TextStyle vacoHeader = GoogleFonts.cantarell(
     fontSize: 16,
     fontWeight: FontWeight.bold,
     color: VacoColors.vacoBlack,
   );
 
-  static TextStyle vacoHeaderLarge = GoogleFonts.cantarell(
+  static TextStyle vacoTitle = GoogleFonts.cantarell(
     fontSize: 64,
     fontWeight: FontWeight.normal,
     color: VacoColors.vacoBlack,

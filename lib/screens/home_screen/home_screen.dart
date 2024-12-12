@@ -30,9 +30,9 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Text("BUSINESS SOCIAL", style: VacoTextStyles.vacoHeaderSmall),
+                        Text("BUSINESS SOCIAL", style: VacoTextStyles.vacoHeader),
                         SizedBox(height: 32.0),
-                        Text("Connect through content", style: VacoTextStyles.vacoHeaderLarge),
+                        Text("Connect through content", style: VacoTextStyles.vacoTitle),
                         SizedBox(height: 32.0),
                         Text(
                             "Break down silos, communicate goals and celebrate achievements with a team connectivity platform that puts people first.\n\n"

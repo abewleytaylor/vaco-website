@@ -18,7 +18,7 @@ class ContactSalesMobileView extends StatelessWidget {
             children: [
               Text(
                 "Ready to see what content can do for you?",
-                style: VacoTextStyles.vacoHeaderSmall,
+                style: VacoTextStyles.vacoHeader,
               ),
               SizedBox(height: 48.0),
               Text(

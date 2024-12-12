@@ -20,7 +20,7 @@ class PlatformDesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Text("THE LANGUAGE OF TODAY", style: VacoTextStyles.vacoHeaderSmall),
+                    Text("THE LANGUAGE OF TODAY", style: VacoTextStyles.vacoHeader),
                     SizedBox(height: 32.0),
                     Text(
                       "Where humans exist in groups there's a need for communication that anyone can listen to, should they choose.\n\n"
@@ -103,7 +103,7 @@ class PlatformDesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Text("A THOUSAND WORDS", style: VacoTextStyles.vacoHeaderSmall),
+                    Text("A THOUSAND WORDS", style: VacoTextStyles.vacoHeader),
                     SizedBox(height: 32.0),
                     Text(
                       "Typical channels like email and instant messaging make text the centerpiece of communications.\n\n"
@@ -133,7 +133,7 @@ class PlatformDesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Text("KEEP THE CONVERSATION GOING", style: VacoTextStyles.vacoHeaderSmall),
+                    Text("KEEP THE CONVERSATION GOING", style: VacoTextStyles.vacoHeader),
                     SizedBox(height: 32.0),
                     Text(
                       "Sending an email to everyone in your organisation is a great way to end a conversation.\n\n"

@@ -47,7 +47,7 @@ class UseCasesDesktopView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text("UPDATE", style: VacoTextStyles.vacoHeaderSmall),
+                      Text("UPDATE", style: VacoTextStyles.vacoHeader),
                       SizedBox(height: 32.0),
                       Text(
                         "Keep everyone on the same page, no matter where they are. Whether it’s a quick team sync or a company-wide announcement, Vaco makes sharing updates effortless.\n\n"
@@ -101,7 +101,7 @@ class UseCasesDesktopView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text("COMMUNICATE", style: VacoTextStyles.vacoHeaderSmall),
+                      Text("COMMUNICATE", style: VacoTextStyles.vacoHeader),
                       SizedBox(height: 32.0),
                       Text(
                         "Turn content into conversations that matter. With the discussions feature, your teams can connect instantly over shared ideas, updates, or insights.\n\n"
@@ -156,7 +156,7 @@ class UseCasesDesktopView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text("CELEBRATE", style: VacoTextStyles.vacoHeaderSmall),
+                      Text("CELEBRATE", style: VacoTextStyles.vacoHeader),
                       SizedBox(height: 32.0),
                       Text(
                         "Every win deserves a spotlight. From small victories to major milestones, Vaco helps you celebrate the moments that matter.\n\n"
