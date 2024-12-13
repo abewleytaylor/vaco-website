@@ -17,6 +17,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: VacoColors.vacoBlue,
+      scrolledUnderElevation: 0.0,
       title: Builder(
         builder: (context) => RawMaterialButton(
           splashColor: Colors.transparent,
