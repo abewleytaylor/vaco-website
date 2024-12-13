@@ -17,19 +17,28 @@ class MobileAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: VacoColors.vacoBlue,
-      title: TextButton(
-        style: ButtonStyle(overlayColor: WidgetStateProperty.all(Colors.transparent)),
-        onPressed: () => Navigator.pushReplacement(
-          context,
-          PageRouteBuilder(
-            pageBuilder: (context, animation1, animation2) => HomeScreen(),
-            transitionDuration: Duration.zero,
-            reverseTransitionDuration: Duration.zero,
+      title: Builder(
+        builder: (context) => RawMaterialButton(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          child: Row(
+            children: [
+              Image.network(
+                "https://storage.googleapis.com/vaco_website_assets/appbar_logo_no_hamburger.png",
+                height: AppBar().preferredSize.height,
+                fit: BoxFit.contain,
+              ),
+            ],
           ),
-        ),
-        child: Text(
-          "Vaco",
-          style: VacoTextStyles.appBarTitle,
+          onPressed: () => Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, animation1, animation2) => HomeScreen(),
+              transitionDuration: Duration.zero,
+              reverseTransitionDuration: Duration.zero,
+            ),
+          ),
         ),
       ),
       centerTitle: false,
