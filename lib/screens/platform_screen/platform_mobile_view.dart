@@ -50,8 +50,8 @@ class PlatformMobileView extends StatelessWidget {
               Text(
                 //todo team portfolios e.g. engineering team has their own feed
                 //todo emphasise here that admins can mandate some follows
-                "Vaco allows employees to follow who they want to. Your workers know best what information they need to be effective. With Vaco they can find it. \n\n"
-                "Multimedia posting means that that whatever your people need to say, they can say it right.",
+                "With Vaco, employees follow the people and information they need to stay connected to what matters most.\n\n"
+                "Multimedia posting ensures every message hits the mark — whether it’s sharing insights, celebrating wins, or driving discussions. Whatever needs to be said, Vaco makes it resonate.",
                 style: VacoTextStyles.vacoBody,
               ),
             ],
@@ -101,8 +101,8 @@ class PlatformMobileView extends StatelessWidget {
               Text("POWERFUL SEARCH", style: VacoTextStyles.vacoHeader),
               SizedBox(height: 24.0),
               Text(
-                "Content is only valuable if the people that need it can find it. Vaco's Intelligent Search functionality turns content into value again and again.\n\n"
-                "Intelligent Search understands what you're looking for to find and summarise relevant content from across your organisation. Don't waste time trawling through old content for one useful comment when Vaco can do it for you.",
+                "Content is only valuable when it’s easy to find. Vaco’s Intelligent Search unlocks the full potential of your information by identifying and summarizing what matters most.\n\n"
+                "No more digging through endless files — Vaco delivers the answers you need, when you need them, so you can focus on what’s next.\n\n",
                 style: VacoTextStyles.vacoBody,
               ),
             ],
@@ -152,8 +152,8 @@ class PlatformMobileView extends StatelessWidget {
               Text("INSIGHTFUL DISCUSSIONS", style: VacoTextStyles.vacoHeader),
               SizedBox(height: 24.0),
               Text(
-                "Vaco's unique Discussions feature centers conversations on content to keep them relevant and allow employees to talk about multiple things at once.\n\n"
-                "Discussions can contain any group of people, driving engagement and minimising distraction.",
+                "Vaco’s unique Discussions feature reimagines group chats by centering them around a single piece of content.\n\n"
+                "By keeping discussions focused and relevant, Vaco ensures only the right people are involved, reducing distractions and enabling deep engagement.",
                 style: VacoTextStyles.vacoBody,
               ),
             ],
