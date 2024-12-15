@@ -5,7 +5,7 @@ class UseCasesConstants {
   static const String column1Body = "Keep everyone on the same page, no matter where they are. Whether it’s a quick team sync or a company-wide announcement, Vaco makes sharing updates effortless.\n\n"
       "With the right information flowing to the right people at the right time, you’ll turn updates into action and keep your company ahead of the competition.";
 
-  static const String column2Header = "COMMUNICATE IDEAS";
+  static const String column2Header = "DISCUSS IDEAS";
   static const String column2Body = "Turn content into conversations that matter. With the Discussions feature, your teams can connect instantly over shared ideas, updates, or insights.\n\n"
       "Start a conversation with anyone—right from a post, project update, or announcement—and watch ideas grow in real time. By putting collaboration where it matters most, Vaco breaks down silos, sparks innovation, and keeps the conversation flowing.\n\n"
       "When your people connect, your company thrives.";
