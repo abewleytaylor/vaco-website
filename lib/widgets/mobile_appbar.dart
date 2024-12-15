@@ -42,6 +42,7 @@ class MobileAppbar extends StatelessWidget implements PreferredSizeWidget {
       toolbarHeight: 80.0,
       actions: [
         PopupMenuButton<String>(
+          iconColor: VacoColors.vacoOrange,
           onSelected: (String value) {
             switch (value) {
               case 'Platform':
