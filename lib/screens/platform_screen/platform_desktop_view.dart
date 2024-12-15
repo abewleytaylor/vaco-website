@@ -20,11 +20,13 @@ class PlatformDesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Text("THE LANGUAGE OF TODAY", style: VacoTextStyles.vacoHeader),
-                    SizedBox(height: 32.0),
+                    Text("ENGAGING FEEDS", style: VacoTextStyles.vacoHeader),
+                    SizedBox(height: 24.0),
                     Text(
-                      "Where humans exist in groups there's a need for communication that anyone can listen to, should they choose.\n\n"
-                      "As the newspaper replaced the town crier, and digital media replaced the newspaper, Vaco replaces the ill suited means of internal communication that businesses have relied on for years.",
+                      //todo team portfolios e.g. engineering team has their own feed
+                      //todo emphasise here that admins can mandate some follows
+                      "Vaco allows employees to follow who they want to. Your workers know best what information they need to be effective. With Vaco they can find it. \n\n"
+                      "Multimedia posting means that that whatever your people need to say, they can say it right.",
                       style: VacoTextStyles.vacoBody,
                     ),
                   ],
@@ -103,12 +105,11 @@ class PlatformDesktopView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Text("A THOUSAND WORDS", style: VacoTextStyles.vacoHeader),
-                    SizedBox(height: 32.0),
+                    Text("INSIGHTFUL DISCUSSIONS", style: VacoTextStyles.vacoHeader),
+                    SizedBox(height: 24.0),
                     Text(
-                      "Typical channels like email and instant messaging make text the centerpiece of communications.\n\n"
-                      "This carry over from the days of printing presses limits what can be said and stops busy colleagues engaging with the content being shared.\n\n"
-                      "Vaco supports multimedia posting to make sure that whatever the best way is to say something, you can say it.",
+                      "Vaco's unique Discussions feature centers conversations on content to keep them relevant and allow employees to talk about multiple things at once.\n\n"
+                      "Discussions can contain any group of people, driving engagement and minimising distraction.",
                       style: VacoTextStyles.vacoBody,
                     ),
                   ],
