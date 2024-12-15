@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaco_website/screens/use_cases_screen/use_cases_constants.dart';
 import 'package:vaco_website/theme/colors.dart';
 import 'package:vaco_website/theme/text_styles.dart';
 
@@ -36,7 +37,7 @@ class UseCasesDesktopView extends StatelessWidget {
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.network("https://storage.googleapis.com/vaco_website_assets/website_mockup.png"),
+                      child: Image.network(UseCasesConstants.screenshotURL),
                     ),
                   ),
                 ),
@@ -47,13 +48,9 @@ class UseCasesDesktopView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text("UPDATE", style: VacoTextStyles.vacoHeader),
-                      SizedBox(height: 32.0),
-                      Text(
-                        "Keep everyone on the same page, no matter where they are. Whether it’s a quick team sync or a company-wide announcement, Vaco makes sharing updates effortless.\n\n"
-                        "With the right information flowing to the right people at the right time, you’ll turn updates into action and keep your company ahead of the competition.",
-                        style: VacoTextStyles.vacoBody,
-                      ),
+                      Text(UseCasesConstants.column1Header, style: VacoTextStyles.vacoHeader),
+                      SizedBox(height: 24.0),
+                      Text(UseCasesConstants.column1Body, style: VacoTextStyles.vacoBody),
                     ],
                   ),
                 ),
@@ -90,7 +87,7 @@ class UseCasesDesktopView extends StatelessWidget {
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.network("https://storage.googleapis.com/vaco_website_assets/website_mockup.png"),
+                      child: Image.network(UseCasesConstants.screenshotURL),
                     ),
                   ),
                 ),
@@ -101,14 +98,9 @@ class UseCasesDesktopView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text("COMMUNICATE", style: VacoTextStyles.vacoHeader),
-                      SizedBox(height: 32.0),
-                      Text(
-                        "Turn content into conversations that matter. With the discussions feature, your teams can connect instantly over shared ideas, updates, or insights.\n\n"
-                        "Start a conversation with anyone—right from a post, project update, or announcement—and watch ideas grow in real time. By putting collaboration where it matters most, Vaco breaks down silos, sparks innovation, and keeps the conversation flowing.\n\n"
-                        "Because when your people connect, your company thrives.",
-                        style: VacoTextStyles.vacoBody,
-                      ),
+                      Text(UseCasesConstants.column2Header, style: VacoTextStyles.vacoHeader),
+                      SizedBox(height: 24.0),
+                      Text(UseCasesConstants.column2Body, style: VacoTextStyles.vacoBody),
                     ],
                   ),
                 ),
@@ -145,7 +137,7 @@ class UseCasesDesktopView extends StatelessWidget {
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
-                      child: Image.network("https://storage.googleapis.com/vaco_website_assets/website_mockup.png"),
+                      child: Image.network(UseCasesConstants.screenshotURL),
                     ),
                   ),
                 ),
@@ -156,14 +148,9 @@ class UseCasesDesktopView extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text("CELEBRATE", style: VacoTextStyles.vacoHeader),
-                      SizedBox(height: 32.0),
-                      Text(
-                        "Every win deserves a spotlight. From small victories to major milestones, Vaco helps you celebrate the moments that matter.\n\n"
-                        "Recognising your team shows your appreciation, boosts team spirit, and creates a culture where people feel valued and motivated.\n\n"
-                        "When you make success a shared experience, you build a community that’s as proud of their work as they are of each other.",
-                        style: VacoTextStyles.vacoBody,
-                      ),
+                      Text(UseCasesConstants.column3Header, style: VacoTextStyles.vacoHeader),
+                      SizedBox(height: 24.0),
+                      Text(UseCasesConstants.column3Body, style: VacoTextStyles.vacoBody),
                     ],
                   ),
                 ),
