@@ -23,14 +23,10 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
           hoverColor: Colors.transparent,
-          child: Row(
-            children: [
-              Image.network(
-                "https://storage.googleapis.com/vaco_website_assets/appbar_logo_no_hamburger.png",
-                height: AppBar().preferredSize.height,
-                fit: BoxFit.contain,
-              ),
-            ],
+          child: Image.network(
+            "https://storage.googleapis.com/vaco_website_assets/appbar_logo_no_hamburger.png",
+            height: AppBar().preferredSize.height,
+            fit: BoxFit.contain,
           ),
           onPressed: () => Navigator.pushReplacement(
             context,
