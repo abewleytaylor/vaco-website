@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                         Text("Connect through content", style: VacoTextStyles.vacoTitle),
                         SizedBox(height: 32.0),
                         Text(
-                            "Break down silos, communicate goals and celebrate achievements with a team connectivity platform that puts people first.\n\n"
+                            "Break down silos, communicate goals and celebrate achievements with a team connectivity platform that puts community first.\n\n"
                             "When content connects, teams never miss a moment to shine.",
                             style: VacoTextStyles.vacoBody),
                         SizedBox(height: 64.0),
