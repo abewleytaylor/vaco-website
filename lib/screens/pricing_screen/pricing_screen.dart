@@ -19,17 +19,20 @@ class PricingScreen extends StatelessWidget {
         persistentFooterAlignment: AlignmentDirectional.centerStart,
         persistentFooterButtons: VacoPersistentFooterButtons.getPersistentFooterButtons(context),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "£2.49 / User / Month",
-                style: VacoTextStyles.vacoTitle,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 16.0),
-              Text("It's that simple", style: VacoTextStyles.vacoBody),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "£2.49 / User / Month",
+                  style: VacoTextStyles.vacoTitle,
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 16.0),
+                Text("It's that simple", style: VacoTextStyles.vacoBody),
+              ],
+            ),
           ),
         ),
       ),
