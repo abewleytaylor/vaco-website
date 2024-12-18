@@ -9,7 +9,7 @@ class PlatformConstants {
 
   static const String row2Header = "POWERFUL SEARCH";
   static const String row2Body = "Content is most valuable when it’s easy to find. Vaco’s Intelligent Search unlocks the full potential of your information by identifying and summarizing what matters most.\n\n"
-      "No more digging through endless files — Vaco delivers the answers you need, when you need them, so you can focus on what’s next.\n\n";
+      "No more digging through endless files — Vaco delivers the answers you need, when you need them, so you can focus on what’s next.";
 
   static const String row3Header = "INSIGHTFUL DISCUSSIONS";
   static const String row3Body = "Vaco’s unique Discussions feature reimagines group chats by centering them around a single piece of content.\n\n"
