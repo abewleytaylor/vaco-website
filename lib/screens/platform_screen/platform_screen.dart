@@ -4,6 +4,7 @@ import 'package:vaco_website/screens/platform_screen/platform_mobile_view.dart';
 import 'package:vaco_website/theme/colors.dart';
 import 'package:vaco_website/widgets/desktop_appbar.dart';
 import 'package:vaco_website/widgets/mobile_appbar.dart';
+import 'package:vaco_website/widgets/mobile_view_drawer.dart';
 import 'package:vaco_website/widgets/persistent_footer_buttons.dart';
 
 class PlatformScreen extends StatelessWidget {
@@ -15,6 +16,7 @@ class PlatformScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: VacoColors.vacoBackground,
         appBar: MediaQuery.of(context).size.width > 1023 ? DesktopAppbar() : MobileAppbar(),
+        endDrawer: MobileViewDrawer(),
         persistentFooterAlignment: AlignmentDirectional.centerStart,
         persistentFooterButtons: VacoPersistentFooterButtons.getPersistentFooterButtons(context),
         body: SingleChildScrollView(

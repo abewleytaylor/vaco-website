@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
-import 'package:vaco_website/screens/contact_sales_screen/contact_sales_screen.dart';
 import 'package:vaco_website/screens/home_screen/home_screen.dart';
-import 'package:vaco_website/screens/platform_screen/platform_screen.dart';
-import 'package:vaco_website/screens/pricing_screen/pricing_screen.dart';
-import 'package:vaco_website/screens/use_cases_screen/use_cases_screen.dart';
 import 'package:vaco_website/theme/colors.dart';
-import 'package:vaco_website/theme/text_styles.dart';
 
 class MobileAppbar extends StatelessWidget implements PreferredSizeWidget {
   const MobileAppbar({super.key});
@@ -42,57 +37,12 @@ class MobileAppbar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: false,
       toolbarHeight: 80.0,
       actions: [
-        PopupMenuButton<String>(
-          icon: Icon(PhosphorIcons.list()),
-          iconColor: VacoColors.vacoOrange,
-          onSelected: (String value) {
-            switch (value) {
-              case 'Platform':
-                Navigator.pushReplacement(
-                  context,
-                  PageRouteBuilder(
-                    pageBuilder: (context, animation1, animation2) => PlatformScreen(),
-                    transitionDuration: Duration.zero,
-                    reverseTransitionDuration: Duration.zero,
-                  ),
-                );
-              case 'Use cases':
-                Navigator.pushReplacement(
-                  context,
-                  PageRouteBuilder(
-                    pageBuilder: (context, animation1, animation2) => UseCasesScreen(),
-                    transitionDuration: Duration.zero,
-                    reverseTransitionDuration: Duration.zero,
-                  ),
-                );
-              case 'Pricing':
-                Navigator.pushReplacement(
-                  context,
-                  PageRouteBuilder(
-                    pageBuilder: (context, animation1, animation2) => PricingScreen(),
-                    transitionDuration: Duration.zero,
-                    reverseTransitionDuration: Duration.zero,
-                  ),
-                );
-              case 'Get started':
-                () => Navigator.pushReplacement(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (context, animation1, animation2) => ContactSalesScreen(),
-                        transitionDuration: Duration.zero,
-                        reverseTransitionDuration: Duration.zero,
-                      ),
-                    );
-            }
-          },
-          itemBuilder: (BuildContext context) {
-            return {'Platform', 'Use cases', 'Pricing', 'Get started'}.map((String choice) {
-              return PopupMenuItem<String>(
-                value: choice,
-                child: Text(choice),
-              );
-            }).toList();
-          },
+        IconButton(
+          onPressed: () => Scaffold.of(context).openEndDrawer(),
+          icon: Icon(
+            PhosphorIconsBold.list,
+            color: VacoColors.vacoOrange,
+          ),
         ),
         SizedBox(width: 16.0),
       ],

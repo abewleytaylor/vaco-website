@@ -3,6 +3,7 @@ import 'package:vaco_website/theme/colors.dart';
 import 'package:vaco_website/theme/text_styles.dart';
 import 'package:vaco_website/widgets/desktop_appbar.dart';
 import 'package:vaco_website/widgets/mobile_appbar.dart';
+import 'package:vaco_website/widgets/mobile_view_drawer.dart';
 import 'package:vaco_website/widgets/persistent_footer_buttons.dart';
 
 class PricingScreen extends StatelessWidget {
@@ -14,6 +15,7 @@ class PricingScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: VacoColors.vacoBackground,
         appBar: MediaQuery.of(context).size.width > 1023 ? DesktopAppbar() : MobileAppbar(),
+        endDrawer: MobileViewDrawer(),
         persistentFooterAlignment: AlignmentDirectional.centerStart,
         persistentFooterButtons: VacoPersistentFooterButtons.getPersistentFooterButtons(context),
         body: Center(
