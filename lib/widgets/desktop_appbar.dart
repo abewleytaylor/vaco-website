@@ -92,7 +92,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
         SizedBox(width: 16.0),
         OutlinedButton(
           style: OutlinedButton.styleFrom(
-            side: BorderSide(width: 1.5, color: VacoColors.vacoOrange),
+            side: BorderSide(width: 2.5, color: VacoColors.vacoOrange),
             backgroundColor: VacoColors.vacoBlue,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8.0),
@@ -107,7 +107,7 @@ class DesktopAppbar extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12.0),
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               "Get started",
               style: VacoTextStyles.appBarAction,
