@@ -30,9 +30,50 @@ class MobileViewDrawer extends StatelessWidget {
               MobileViewDrawerListItem(title: "Platform", destination: PlatformScreen()),
               MobileViewDrawerListItem(title: "Use cases", destination: UseCasesScreen()),
               MobileViewDrawerListItem(title: "Pricing", destination: PricingScreen()),
-              MobileViewDrawerListItem(title: "Get started", destination: ContactSalesScreen()),
+              //MobileViewDrawerListItem(title: "Investor information", destination: ContactSalesScreen()),
+              SizedBox(height: 12.0),
+              MobileViewDrawerGetStartedButton(),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class MobileViewDrawerGetStartedButton extends StatelessWidget {
+  const MobileViewDrawerGetStartedButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: OutlinedButton(
+        style: OutlinedButton.styleFrom(
+          side: BorderSide(width: 2.5, color: VacoColors.vacoOrange),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+        ),
+        onPressed: () => Navigator.pushReplacement(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) => ContactSalesScreen(),
+            transitionDuration: Duration.zero,
+            reverseTransitionDuration: Duration.zero,
+          ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12.0),
+              child: Text(
+                "Get started",
+                style: VacoTextStyles.appBarAction,
+              ),
+            ),
+          ],
         ),
       ),
     );
