@@ -17,6 +17,7 @@ class UseCasesScreen extends StatelessWidget {
         backgroundColor: VacoColors.vacoBackground,
         appBar: MediaQuery.of(context).size.width > 1023 ? DesktopAppbar() : MobileAppbar(),
         endDrawer: MobileViewDrawer(),
+        drawerEnableOpenDragGesture: false,
         persistentFooterAlignment: AlignmentDirectional.centerStart,
         persistentFooterButtons: VacoPersistentFooterButtons.getPersistentFooterButtons(context),
         body: SingleChildScrollView(child: MediaQuery.of(context).size.width > MediaQuery.of(context).size.height * 1.3 && MediaQuery.of(context).size.height > 512 ? UseCasesDesktopView() : UseCasesMobileView()),

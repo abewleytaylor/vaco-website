@@ -16,6 +16,7 @@ class PricingScreen extends StatelessWidget {
         backgroundColor: VacoColors.vacoBackground,
         appBar: MediaQuery.of(context).size.width > 1023 ? DesktopAppbar() : MobileAppbar(),
         endDrawer: MobileViewDrawer(),
+        drawerEnableOpenDragGesture: false,
         persistentFooterAlignment: AlignmentDirectional.centerStart,
         persistentFooterButtons: VacoPersistentFooterButtons.getPersistentFooterButtons(context),
         body: Center(

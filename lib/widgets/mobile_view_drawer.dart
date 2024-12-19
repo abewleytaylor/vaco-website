@@ -10,6 +10,8 @@ import 'package:vaco_website/theme/text_styles.dart';
 class MobileViewDrawer extends StatelessWidget {
   const MobileViewDrawer({super.key});
 
+  //todo active index to highlight current page
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
