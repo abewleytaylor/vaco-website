@@ -21708,7 +21708,7 @@ p=A.n1(A.aX("Privacy Policy",r,r,r),new A.a5F(a),p)
 s=A.fw(r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.aJ(B.v,q),r,r,r,r,r,r,r,r,r)
 s=A.n1(A.aX("Terms of Service",r,r,r),new A.a5G(a),s)
 q=A.fw(r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.aJ(B.v,q),r,r,r,r,r,r,r,r,r)
-return A.b([p,s,A.n1(A.aX("Investor information",r,r,r),new A.a5H(a),q)],t.p)},
+return A.b([p,s,A.n1(A.aX("Investor Information",r,r,r),new A.a5H(a),q)],t.p)},
 a5F:function a5F(a){this.a=a},
 a5E:function a5E(){},
 a5G:function a5G(a){this.a=a},
