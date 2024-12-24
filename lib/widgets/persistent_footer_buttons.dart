@@ -32,7 +32,7 @@ class VacoPersistentFooterButtons {
             reverseTransitionDuration: Duration.zero,
           ),
         ),
-        child: Text("Investor information"),
+        child: Text("Investor Information"),
       ),
     ];
   }
