@@ -30,7 +30,6 @@ class MobileViewDrawer extends StatelessWidget {
               MobileViewDrawerListItem(title: "Platform", destination: PlatformScreen()),
               MobileViewDrawerListItem(title: "Use cases", destination: UseCasesScreen()),
               MobileViewDrawerListItem(title: "Pricing", destination: PricingScreen()),
-              //MobileViewDrawerListItem(title: "Investor information", destination: ContactSalesScreen()),
               SizedBox(height: 12.0),
               MobileViewDrawerGetStartedButton(),
             ],
